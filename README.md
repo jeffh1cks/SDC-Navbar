@@ -1,6 +1,6 @@
-# Project Name
+# TimCamp Nav Bar
 
-> Project description
+> Nav Bar module for TimCamp app project.
 
 ## Related Projects
 
