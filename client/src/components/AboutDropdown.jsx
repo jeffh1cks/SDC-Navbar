@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutDropdown = (props) => {
   return (
-    <div>Hello</div>
+    <li>About</li>
   );
 };
 

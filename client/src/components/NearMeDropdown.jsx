@@ -2,7 +2,7 @@ import React from 'react';
 
 const NearMeDropdown = (props) => {
   return (
-    <div>Hello</div>
+    <li>Near me</li>
   );
 };
 

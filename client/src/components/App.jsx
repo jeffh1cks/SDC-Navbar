@@ -20,15 +20,21 @@ export default class App extends React.Component {
             </div>
             <Search />
           </div>
-          <div className="nav-container-right">
+          <ul className="nav-container-right">
             <NearMeDropdown />
             <AboutDropdown />
-            <div className="nav-timcash">Earn Timcash</div>
-            <div className="nav-login">Log in</div>
-            <div className="nav-signup">Sign up</div>
+            <li className="nav-timcash">Earn Timcash</li>
+            <li className="nav-login">Log in</li>
+            <li className="nav-signup">Sign up</li>
             <HostButton />
-          </div>
+          </ul>
         </div>
+        {/* -- Delete this stuff between this comment -- */}
+        <div className="someotherstuff">
+          <div className="childstuff1"></div>
+          <div className="childstuff2"></div>
+        </div>
+        {/* -- and this one -- */}
       </div>
     );
   }
