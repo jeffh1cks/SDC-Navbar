@@ -7,7 +7,7 @@ faker.locale = 'en_US';
 // Only run once to populate a locations and camps collection in a MongoDB database called 'timcamp'.
 
 let locationsGenerator = function() {
-  let locations = [];
+  locations = [];
   for (var i = 0; i < 150; i++) {
     let locationCity = faker.address.city();
     let locationState = faker.address.state();
@@ -22,7 +22,7 @@ let locationsGenerator = function() {
       console.error(err);
     } else {
       db.connection.close();
-      console.log('Locations seed successful!');
+      console.log('Locations Seed successful!');
     }
   });
 };
@@ -46,16 +46,16 @@ let campsGenerator = function() {
       state: campState,
       photo: campPhoto
     };
-    camps.push(camp);
   }
   db.Camp.insertMany(camps, function (err, results) {
     if (err) {
       console.error(err);
     } else {
-      console.log('Camps seed successful!');
-      locationsGenerator();
+      db.connection.close();
+      console.log('Camps Seed successful!');
     }
   });
 };
 
+locationsGenerator();
 campsGenerator();
