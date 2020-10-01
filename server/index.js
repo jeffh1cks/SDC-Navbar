@@ -18,9 +18,20 @@ app.use(bodyparser.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 app.use(cors());
 
-// Route to search for locations
+// Route to search for locations by city
 app.use('/api/search/locations', (req, res) => {
   dbHelpers.searchLocations(req.body.searchTerm, (err, results) => {
+    if (err) {
+      res.status(400).send(err);
+    } else {
+      res.status(200).json(results);
+    }
+  });
+});
+
+// Route to search for camps by name
+app.use('/api/search/camps', (req, res) => {
+  dbHelpers.searchCamps(req.body.searchTerm, (err, results) => {
     if (err) {
       res.status(400).send(err);
     } else {

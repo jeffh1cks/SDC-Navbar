@@ -11,6 +11,16 @@ module.exports = {
         callback(null, results);
       }
     });
+  },
+
+  searchCamps: (searchTerm, callback) => {
+    db.Camp.find({'name': { '$regex': searchTerm, '$options': 'i' }}, (err, results) => {
+      if (err) {
+        callback(err);
+      } else {
+        callback(null, results);
+      }
+    });
   }
 
 };
