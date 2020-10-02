@@ -24,7 +24,6 @@ const App = () => {
             onMouseLeave={() => setNearMeHover(false)}
           >
             <span className="nav-item-text">Near me</span>
-            {/* <NearMeDropdown /> */}
             {nearMeHover && <NearMeDropdown />}
           </li>
           <li className="nav-item"

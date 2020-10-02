@@ -19,8 +19,8 @@ app.use(morgan('dev'));
 app.use(cors());
 
 // Route to search for locations by city
-app.use('/api/search/locations', (req, res) => {
-  dbHelpers.searchLocations(req.body.searchTerm, (err, results) => {
+app.get('/api/search/locations/:term', (req, res) => {
+  dbHelpers.searchLocations(req.params.term, (err, results) => {
     if (err) {
       res.status(400).send(err);
     } else {
@@ -30,8 +30,8 @@ app.use('/api/search/locations', (req, res) => {
 });
 
 // Route to search for camps by name
-app.use('/api/search/camps', (req, res) => {
-  dbHelpers.searchCamps(req.body.searchTerm, (err, results) => {
+app.get('/api/search/camps/:term', (req, res) => {
+  dbHelpers.searchCamps(req.params.term, (err, results) => {
     if (err) {
       res.status(400).send(err);
     } else {
