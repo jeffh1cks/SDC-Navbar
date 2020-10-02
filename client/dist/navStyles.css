@@ -54,7 +54,7 @@ table {
 
 /* --------------- My CSS --------------- */
 
-* {
+*, *:before, *:after {
   box-sizing: border-box;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
@@ -105,6 +105,8 @@ table {
   width: 150px;
 }
 
+/* --- Search Bar --- */
+
 .nav-search-container {
   display: flex;
   align-items: center;
@@ -149,15 +151,116 @@ table {
   font-weight: 400;
 }
 
-.nav-container-right li {
-  margin: 0 18px;
-  height: 22px;
+.nav-container-right
+.nav-item {
+  margin: 0 4px;
+  height: 70px;
+  padding: 0 12px;
+  line-height: 70px;
+  cursor: pointer;
+  display: block;
+}
+
+.nav-container-right
+.nav-item:hover
+.nav-item-text {
+  border-bottom: 2px solid #4adbb0;
+}
+
+.nav-container-right
+.nav-item-text {
+  padding-bottom: 3px;
+}
+
+/* --- Near Me Dropdown --- */
+
+.nav-near-dropdown {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: rgba(120,120,120,.2) 0 10px 16px -6px;
+  color: #333;
+  font-size: 18px;
+  line-height: 25.56px;
+  list-style: outside none none;
+  padding-bottom: 60px;
+  padding-top: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav-near-dropdown-list-container {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-near-dropdown-col {
+  width: 250px;
+  font-size: 15px;
+  padding: 0 10px;
+  margin-right: 40px;
+}
+
+.nav-near-dropdown-col:last-child {
+  margin-right: 0px;
+}
+
+.nav-near-dropdown-col h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.nav-near-dropdown-col li {
+  line-height: 30px;
+}
+
+.nav-near-dropdown-col li:hover {
+  text-decoration: underline;
+}
+
+/* --- About Dropdown Menu --- */
+
+.nav-about-list {
+  background-color: white;
+  position: absolute;
+  top: 70px;
+  width: 250px;
+  transform: translateX(-39%);
+  border: 1px solid rgb(233, 233, 233);
+  list-style: none;
+  text-align: start;
+  padding: 10px 30px 5px 30px;
+  font-size: 15px;
+  box-shadow: rgba(120,120,120,.2) 0 10px 16px -6px;
+  list-style: outside none none;
+}
+
+.nav-about-list li {
+  height: 45px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  line-height: 45px;
+}
+
+.nav-about-list li:last-child {
+  border-bottom: none;
+}
+
+.nav-about-list-item {
+  transition: 250ms;
   cursor: pointer;
 }
 
-.nav-container-right li:hover {
-  border-bottom: 2px solid #4adbb0;
+.nav-about-list-item:hover {
+  transform: translateX(14px);
 }
+
+/* --- Start Hosting Button --- */
 
 .nav-hosting-btn {
   background-color: #4adbb0;
