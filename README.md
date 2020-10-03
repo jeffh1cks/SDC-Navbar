@@ -37,3 +37,14 @@ npm install -g webpack
 npm install
 ```
 
+### Database
+1. Set up a mongodb database called 'timcamp'
+2. Run the seed file from the command line while in the root directory, run ```npm run seed```
+
+### Running the app
+1. In a terminal, from the root directory:
+```sh
+npm run build
+npm run start
+```
+2. Open a browser and navigate to http://localhost:3001
