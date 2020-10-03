@@ -29,8 +29,8 @@ const AboutDropdown = (props) => {
     <ul className="nav-about-list" >
       {aboutDropdownList.map((item, index) => {
         return (
-          <li key={index} className="nav-about-list-item">
-            {item.itemName}
+          <li key={index}>
+            <div className="nav-about-list-item">{item.itemName}</div>
           </li>
         );
       })}

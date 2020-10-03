@@ -153,6 +153,7 @@ table {
   left: 203px;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 17px;
+  border-radius: 4px;
 }
 
 .nav-search-result-location-container {
