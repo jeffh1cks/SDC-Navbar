@@ -138,6 +138,81 @@ table {
   opacity: 1;
 }
 
+.nav-search-results-dropdown {
+  width: 400px;
+  max-height: 500px;
+  background-color: white;
+  border: 1px solid #ebebeb;
+  box-shadow: rgba(0,0,0,.1) 0 2px 4px;
+  color: #333;
+  line-height: 22.72px;
+  overflow-y: auto;
+  position: absolute;
+  top: 60px;
+  z-index: 100;
+  left: 203px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+}
+
+.nav-search-result-location-container {
+  width: 400px;
+  min-height: 55px;
+  line-height: 55px;
+  display: flex;
+  cursor: pointer;
+}
+
+.nav-search-result-location-container:hover {
+  background-color: #f9f9f9;
+}
+
+.nav-search-result-location-icon {
+  margin: 0 8px 0 15px;
+}
+
+.nav-search-result-location {
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.nav-search-result-camp-container{
+  width: 400px;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-search-result-camp-container:hover {
+  background-color: #f9f9f9;
+}
+
+.nav-search-result-camp {
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.nav-search-result-camp-icon {
+  margin: 0 8px 0 15px;
+}
+
+.nav-search-camp-name {
+  margin-top: 14px;
+}
+
+.nav-search-camp-info {
+  font-size: 12px;
+  margin: 0px 0 12px 0;
+  color: #757575;
+}
+
+.nav-search-result-camp-container img {
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+}
+
 /* --- Right Side --- */
 
 .nav-container-right {
