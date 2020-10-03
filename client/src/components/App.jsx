@@ -46,12 +46,6 @@ const App = () => {
           <HostButton />
         </ul>
       </div>
-      {/* -- Delete this stuff between this comment -- */}
-      <div className="someotherstuff">
-        <div className="childstuff1"></div>
-        <div className="childstuff2"></div>
-      </div>
-      {/* -- and this one -- */}
     </div>
   );
 };

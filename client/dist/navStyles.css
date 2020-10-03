@@ -59,25 +59,6 @@ table {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-/* --- Sample Stuff to test on --- */
-
-.someotherstuff {
-  height: 500px;
-  background-color: lightsteelblue;
-  display: flex;
-  justify-content: center;
-}
-
-.childstuff1 {
-  width: 720px;
-  background-color: lightblue;
-}
-
-.childstuff2 {
-  width: 360px;
-  background-color: lightgoldenrodyellow;
-}
-
 /* --- Nav Bar --- */
 
 .nav-navbar-container {
