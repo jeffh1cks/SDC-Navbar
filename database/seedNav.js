@@ -34,7 +34,7 @@ let campsGenerator = function() {
     let campNameSuffixes = ['', ' State Park', ' Lake', ' Farm', ' National Forest', ' Recreation Area', '', ' Preserve', ' State Forest', ' Glen', ' Hollow', '', ' Canyon', ' Oasis', ' Cove', ' Camp', ' Dessert', ' Valley', ' Creek'];
     let campNamePrefix = campNamePrefixes[Math.floor(Math.random() * Math.floor(campNamePrefixes.length))];
     let campNameSuffix = campNameSuffixes[Math.floor(Math.random() * Math.floor(campNameSuffixes.length))];
-    let campName = campNamePrefix+ faker.name.lastName() + campNameSuffix;
+    let campName = campNamePrefix + faker.name.lastName() + campNameSuffix;
     let campType = 'Property';
     if (campName.slice(-10) === 'State Park' || campName.slice(-15) === 'National Forest' || campName.slice(-15) === 'Recreation Area' || campName.slice(-8) === 'Preserve' || campName.slice(-12) === 'State Forest') {
       campType = 'Public Park';
