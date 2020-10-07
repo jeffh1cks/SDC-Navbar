@@ -202,6 +202,7 @@ table {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   color: #333;
   font-weight: 400;
+  z-index: 9500;
 }
 
 .nav-container-right
