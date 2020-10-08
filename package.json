@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node server/index.js",
     "seed": "node database/seedNav.js",
-    "build": "webpack"
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "axios": "^0.20.0",
