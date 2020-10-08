@@ -3,6 +3,7 @@ import Search from './Search.jsx';
 import NearMeDropdown from './NearMeDropdown.jsx';
 import AboutDropdown from './AboutDropdown.jsx';
 import HostButton from './HostButton.jsx';
+import HeroPhotos from './HeroPhotos.jsx';
 
 const App = () => {
 
@@ -46,6 +47,7 @@ const App = () => {
           <HostButton />
         </ul>
       </div>
+      <HeroPhotos />
     </div>
   );
 };
