@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NearMeDropDownColumn = (props) => {
+const NearMeDropdownColumn = (props) => {
 
   return (
     <div className="nav-near-dropdown-col" key={props.index}>
@@ -17,4 +17,4 @@ const NearMeDropDownColumn = (props) => {
 
 };
 
-export default NearMeDropDownColumn;
+export default NearMeDropdownColumn;
