@@ -81,6 +81,11 @@
   border-radius: 4px;
 }
 
+.nav-search-results-dropdown ul {
+  margin: 0;
+  padding: 0;
+}
+
 .nav-search-result-location-container {
   width: 400px;
   min-height: 55px;
